@@ -32,8 +32,8 @@
       },
       "model_parameters": {
         "C_VERBOSITY": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_XDEVICEFAMILY": [ { "value": "versal", "resolve_type": "generated", "usage": "all" } ],
-        "C_XDEVICE": [ { "value": "xcvc1502", "resolve_type": "generated", "usage": "all" } ],
+        "C_XDEVICEFAMILY": [ { "value": "kintex7", "resolve_type": "generated", "usage": "all" } ],
+        "C_XDEVICE": [ { "value": "xc7k420t", "resolve_type": "generated", "usage": "all" } ],
         "C_A_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_B_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_OUT_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -64,18 +64,18 @@
         "C_M_AXIS_DOUT_TUSER_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
-        "ARCHITECTURE": [ { "value": "versal" } ],
+        "ARCHITECTURE": [ { "value": "kintex7" } ],
         "BASE_BOARD_PART": [ { "value": "" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
-        "DEVICE": [ { "value": "xcvc1502" } ],
+        "DEVICE": [ { "value": "xc7k420t" } ],
         "NEXTGEN_VERSAL": [ { "value": "0" } ],
-        "PACKAGE": [ { "value": "nsvg1369" } ],
+        "PACKAGE": [ { "value": "ffg1156" } ],
         "PREFHDL": [ { "value": "VERILOG" } ],
         "SILICON_REVISION": [ { "value": "" } ],
         "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
-        "SPEEDGRADE": [ { "value": "-1LHP" } ],
-        "STATIC_POWER": [ { "value": "L" } ],
-        "TEMPERATURE_GRADE": [ { "value": "I" } ]
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],

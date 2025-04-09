@@ -22,6 +22,10 @@
 
 module tb();
     
+
+    string MY_PATH = "E:/Netlist/ITGLOBAL/wi_fi/correlator_src/tb/";
+
+    
     
     bit clk = 0;
     bit g_reset = 1;
@@ -32,6 +36,7 @@ module tb();
 	bit [31:0] cnt_w;
 	bit valid;
 	
+	
 	int fd1, fd2, fd3, fd4, status1, status2, status3, status4;
 	
     //	Clock generator
@@ -39,13 +44,13 @@ module tb();
 	
 	initial begin
 		
-		fd1 = $fopen("E:/Netlist/ITGLOBAL/wi_fi/Implementing-802.11-Transmitter-and-Receiver-blocks-in-MATLAB-master/waveform_i.txt", "r");
+		fd1 = $fopen($sformatf({MY_PATH, "waveform_i.txt"}), "r");
         for (int i = 0; i < 28480; i = i + 1) begin
             status1 = $fscanf(fd1, "%f\n", i_I_arr_const[i+1]);
         end
         $fclose(fd1);
         
-        fd2 = $fopen("E:/Netlist/ITGLOBAL/wi_fi/Implementing-802.11-Transmitter-and-Receiver-blocks-in-MATLAB-master/waveform_q.txt", "r");
+        fd2 = $fopen($sformatf({MY_PATH, "waveform_q.txt"}), "r");
         for (int i = 0; i < 28480; i = i + 1) begin
             status2 = $fscanf(fd2, "%f\n", i_Q_arr_const[i+1]);
         end
